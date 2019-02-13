@@ -18,9 +18,9 @@ public class RunBank {
         Transaction[] transaction = new Transaction[limit];
 
         int transactionInstance = 0;
-        transaction[transactionInstance++] = new Deposit(16241, 500.00);
-        transaction[transactionInstance++] = new Withdrawal(16241, 250.00);
-        transaction[transactionInstance++] = new BalanceInquiry(16241);
+        transaction[transactionInstance++] = new Deposit(100000, 500.00);
+        transaction[transactionInstance++] = new Withdrawal(100000, 250.00);
+        transaction[transactionInstance++] = new BalanceInquiry(100000);
 
         for (int i = 0; i < transactionInstance; i++) {
         	System.out.println("Transaction type: " + transaction[i].transactionType());
